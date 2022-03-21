@@ -1,10 +1,10 @@
 const cadaImagem = img =>
   /*html*/`<div class="container-geral" id="${img}">
 <div class="container-geral-inner">
-  <div class="bg" style="background-image: url(/img/${img}.jpg);">
+  <div class="bg" style="background-image: url(./img/${img}.jpg);">
   </div>
   <div class="container-img">
-    <img src="/img/${img}.jpg" alt="">
+    <img src="./img/${img}.jpg" alt="">
   </div>
   <div class="container-legenda">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
