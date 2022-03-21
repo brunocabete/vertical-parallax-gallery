@@ -1,0 +1,65 @@
+:root {
+  --deadzone: 1000px;
+}
+
+img {
+  height: 100vh;
+  margin: 0 auto;
+  display: block;
+}
+
+#outer-container {
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: var(--deadzone);
+}
+#outer-container::after {
+  content: "";
+}
+.container-geral {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.938);
+}
+
+.container-img {
+  width: 100%;
+}
+.container-legenda p {
+  background-color: rgba(0, 0, 0, 0.384);
+  width: 60%;
+  margin: 0 auto;
+  color: white;
+  font-size: 18px;
+  padding: 15px;
+}
+.container-legenda {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 50px;
+  transform: translateY(200%);
+  transition: transform 0.5s;
+}
+.container-legenda.ativo {
+  transform: translateY(0);
+}
+.container-geral-inner {
+  position: relative;
+  overflow: hidden;
+}
+.bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: scale(1.5);
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(15px) brightness(50%);
+}
