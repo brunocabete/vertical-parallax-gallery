@@ -1,11 +1,18 @@
 :root {
   --deadzone: 1000px;
+  --bg-color: #2f4858;
 }
 
 img {
   height: 100vh;
   margin: 0 auto;
   display: block;
+}
+
+.cover {
+  height: 100vh;
+  width: 100;
+  background-color: var(--bg-color);
 }
 
 #outer-container {
@@ -16,7 +23,7 @@ img {
 #outer-container::after {
   content: "";
 }
-.container-geral {
+.general-container {
   position: sticky;
   top: 0;
   width: 100%;
@@ -26,7 +33,7 @@ img {
 .container-img {
   width: 100%;
 }
-.container-legenda p {
+.container-description p {
   background-color: rgba(0, 0, 0, 0.384);
   width: 60%;
   margin: 0 auto;
@@ -34,7 +41,7 @@ img {
   font-size: 18px;
   padding: 15px;
 }
-.container-legenda {
+.container-description {
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -44,10 +51,10 @@ img {
   transform: translateY(200%);
   transition: transform 0.5s;
 }
-.container-legenda.ativo {
+.container-description.active {
   transform: translateY(0);
 }
-.container-geral-inner {
+.general-container-inner {
   position: relative;
   overflow: hidden;
 }

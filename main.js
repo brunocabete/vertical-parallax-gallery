@@ -1,40 +1,33 @@
-const cadaImagem = img =>
-  /*html*/`<div class="container-geral" id="${img}">
-<div class="container-geral-inner">
+const eachSlide = img =>
+  /*html*/`<div class="general-container" id="${img}">
+<div class="general-container-inner">
   <div class="bg" style="background-image: url(./img/${img}.jpg);">
   </div>
   <div class="container-img">
     <img src="./img/${img}.jpg" alt="">
   </div>
-  <div class="container-legenda">
+  <div class="container-description">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
   </div>
 </div>
 </div>`
 
-let elemento = ""
+let element = ""
+const slideCount = 10
 
-for (let i = 1; i <= 10; i++) {
-  elemento += cadaImagem(i)
+for (let i = 1; i <= slideCount; i++) {
+  element += eachSlide(i)
 }
 
-document.getElementById('outer-container').insertAdjacentHTML('afterbegin', elemento)
+document.getElementById('outer-container').insertAdjacentHTML('afterbegin', element)
 
 
-const todosOsSlides = document.querySelectorAll('.container-geral')
-
-
+const todosOsSlides = document.querySelectorAll('.general-container')
+const deadzone = parseInt(getComputedStyle(document.body).getPropertyValue('--deadzone').replace('px', ''))
 const base = {}
 
-todosOsSlides.forEach(v => {
-  base[v.getAttribute('id')] = v.offsetTop
-})
-
-const deadzone = parseInt(getComputedStyle(document.body).getPropertyValue('--deadzone').replace('px', ''))
-
-
-for (let i = 1; i <= 10; i++) {
-  base[i] = (window.innerHeight + deadzone) * (i - 1)
+for (let i = 1; i <= slideCount; i++) {
+  base[i] = (window.innerHeight + deadzone) * (i - 1) + (window.innerHeight)
 }
 
 document.addEventListener('scroll', () => {
@@ -42,16 +35,12 @@ document.addEventListener('scroll', () => {
 
     const id = v.getAttribute('id')
     const offset = v.offsetTop
+    const descriptionDeadzone = 300
 
-    if (offset > base[id] + 300) {
-      v.querySelector('.container-legenda').classList.add('ativo')
-
+    if (offset > base[id] + descriptionDeadzone) {
+      v.querySelector('.container-description').classList.add('active')
     } else {
-
-      v.querySelector('.container-legenda').classList.remove('ativo')
-
+      v.querySelector('.container-description').classList.remove('active')
     }
-
-
   })
 })
