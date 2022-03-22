@@ -5,6 +5,11 @@ body {
   --deadzone: 1000px;
   --bg-color: #272e339c;
 }
+@media (max-width: 768px) {
+  :root {
+    --deadzone: 500px;
+  }
+}
 
 p {
   margin-bottom: 1ch;
