@@ -15,12 +15,84 @@ const eachSlide = img =>
 </div>
 </div>`
 
+const eachSlideAlt = img =>  /*html*/`<div class="general-container split" id="${img}">
+<div class="general-container-inner">
+  <div class="bg" style="background-image: url(./img/${img}.jpg);">
+  </div>
+  <div class="container-text">
+  <div class="container-text-inner">
+  <p><cite>Photo ${img}</cite> - John Doe </p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, illo illum soluta totam reiciendis hic amet dolorum et voluptates provident, iste ab rerum sequi unde. Corrupti est temporibus possimus dolorum, ad, ratione nihil ex nemo placeat tenetur id exercitationem ut voluptatem a ipsum dolore. Aliquam ducimus eveniet at molestias possimus.</p>
+  </div>
+  </div>
+  <div class="container-img">
+    <img class="to-the-side" src="./img/${img}.jpg" alt="">
+  </div>
+</div>
+</div>`
+
+const finalSlide = () =>  /*html*/`<div class="general-container final" id="">
+<div class="general-container-inner ">
+  <div class="bg" >
+  </div>
+  <div class="container-content-final">
+   <h2>Final Slide</h2>
+   <div class="row-of-credits">
+   <ul>
+   <span>Lorem Ipsum</span>
+   <li>Lorena Ipsum</li>
+   <li>Lorenzo Ipsum</li>
+   <li>Loiane Ipsum</li>
+   </ul>
+   <ul>
+   <span>Lorem Ipsum</span>
+   <li>Lorena Ipsum</li>
+   <li>Lorenzo Ipsum</li>
+   <li>Loiane Ipsum</li>
+   </ul>
+   <ul>
+   <span>Lorem Ipsum</span>
+   <li>Lorena Ipsum</li>
+   <li>Lorenzo Ipsum</li>
+   <li>Loiane Ipsum</li>
+   </ul>
+   </div>
+
+   <div class="row-of-credits">
+   <ul>
+   <span>Lorem Ipsum</span>
+   <li>Lorena Ipsum</li>
+   <li>Lorenzo Ipsum</li>
+   <li>Loiane Ipsum</li>
+   </ul>
+   <ul>
+   <span>Lorem Ipsum</span>
+   <li>Lorena Ipsum</li>
+   <li>Lorenzo Ipsum</li>
+   <li>Loiane Ipsum</li>
+   </ul>
+   <ul>
+   <span>Lorem Ipsum</span>
+   <li>Lorena Ipsum</li>
+   <li>Lorenzo Ipsum</li>
+   <li>Loiane Ipsum</li>
+   </ul>
+   </div>
+  </div>
+</div>
+</div>`
+
 let element = ""
 const slideCount = 10
 
 for (let i = 1; i <= slideCount; i++) {
-  element += eachSlide(i)
+  if (i === 2) {
+    element += eachSlideAlt(i)
+  } else {
+    element += eachSlide(i)
+  }
 }
+element += finalSlide()
 
 document.getElementById('outer-container').insertAdjacentHTML('afterbegin', element)
 
@@ -41,9 +113,19 @@ document.addEventListener('scroll', () => {
     const descriptionDeadzone = 300
 
     if (offset > base[id] + descriptionDeadzone) {
-      v.querySelector('.container-description').classList.add('active')
+      try {
+
+        v.querySelector('.container-description').classList.add('active')
+      } catch {
+
+      }
     } else {
-      v.querySelector('.container-description').classList.remove('active')
+      try {
+
+        v.querySelector('.container-description').classList.remove('active')
+      } catch {
+
+      }
     }
   })
 })
