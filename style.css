@@ -180,13 +180,84 @@ h1 {
   font-weight: bold;
   margin-bottom: 10px;
   display: inline-block;
+  text-align: center;
+  width: 100%;
 }
 .final li {
   font-size: 20px;
+  margin: 15px 0;
+  text-align: center;
 }
 .row-of-credits {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   width: 60%;
   margin: 20px auto;
+}
+.final ul {
+  width: 33%;
+  margin: 15px 0;
+}
+
+@media (max-width: 768px) {
+  .general-container {
+    width: 100vw;
+  }
+  .container-img {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  #cover-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+  }
+  .split .general-container-inner {
+    flex-direction: column-reverse;
+  }
+  .split .container-img {
+    width: 100%;
+    height: 50vh;
+  }
+  .container-text {
+    position: static;
+    width: 100%;
+    color: black;
+    height: 50vh;
+  }
+  .to-the-side {
+    height: 100%;
+    object-fit: contain;
+  }
+  .row-of-credits {
+    width: 100%;
+    margin: 5px 0;
+    justify-content: space-between;
+  }
+  .final h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .final ul span {
+    font-size: 18px;
+  }
+  .final ul {
+    margin: 10px 0;
+    width: 45%;
+  }
+  .final li {
+    font-size: 16px;
+  }
 }

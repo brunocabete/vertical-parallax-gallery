@@ -56,9 +56,6 @@ const finalSlide = () =>  /*html*/`<div class="general-container final" id="">
    <li>Lorenzo Ipsum</li>
    <li>Loiane Ipsum</li>
    </ul>
-   </div>
-
-   <div class="row-of-credits">
    <ul>
    <span>Lorem Ipsum</span>
    <li>Lorena Ipsum</li>
@@ -100,9 +97,13 @@ document.getElementById('outer-container').insertAdjacentHTML('afterbegin', elem
 const todosOsSlides = document.querySelectorAll('.general-container')
 const deadzone = parseInt(getComputedStyle(document.body).getPropertyValue('--deadzone').replace('px', ''))
 const base = {}
+const screensize = window.innerWidth >= 768 ? window.innerHeight : document.querySelector('.cover').offsetHeight
+
 
 for (let i = 1; i <= slideCount; i++) {
-  base[i] = (window.innerHeight + deadzone) * (i - 1) + (window.innerHeight)
+
+
+  base[i] = (screensize + deadzone) * (i - 1) + (window.innerHeight)
 }
 
 document.addEventListener('scroll', () => {
