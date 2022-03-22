@@ -111,7 +111,7 @@ document.addEventListener('scroll', () => {
 
     const id = v.getAttribute('id')
     const offset = v.offsetTop
-    const descriptionDeadzone = 300
+    const descriptionDeadzone = window.innerWidth >= 768 ? 300 : 175
 
     if (offset > base[id] + descriptionDeadzone) {
       try {
