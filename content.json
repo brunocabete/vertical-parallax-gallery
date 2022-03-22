@@ -1,0 +1,62 @@
+{
+  "cover": {
+    "background": "shyam-hCNZEo--1pA-unsplash.jpg",
+    "text": {}
+  },
+  "slides": {
+    "1": {
+      "picture": "./img/1.jpg",
+      "content": "./templates/1.html",
+      "isSideBySide": false
+    },
+    "2": {
+      "picture": "./img/2.jpg",
+      "content": "./templates/2.html",
+      "isSideBySide": true
+    },
+    "3": {
+      "picture": "./img/3.jpg",
+      "content": "./templates/3.html",
+      "isSideBySide": false
+    },
+    "4": {
+      "picture": "./img/4.jpg",
+      "content": "./templates/4.html",
+      "isSideBySide": false
+    },
+    "5": {
+      "picture": "./img/5.jpg",
+      "content": "./templates/5.html",
+      "isSideBySide": false
+    },
+    "6": {
+      "picture": "./img/6.jpg",
+      "content": "./templates/6.html",
+      "isSideBySide": false
+    },
+    "7": {
+      "picture": "./img/7.jpg",
+      "content": "./templates/7.html",
+      "isSideBySide": false
+    },
+    "8": {
+      "picture": "./img/8.jpg",
+      "content": "./templates/8.html",
+      "isSideBySide": false
+    },
+    "9": {
+      "picture": "./img/9.jpg",
+      "content": "./templates/9.html",
+      "isSideBySide": false
+    },
+    "10": {
+      "picture": "./img/10.jpg",
+      "content": "./templates/10.html",
+      "isSideBySide": false
+    }
+  },
+  "final": {
+    "backgroundColor": "",
+    "content": ""
+  }
+}
