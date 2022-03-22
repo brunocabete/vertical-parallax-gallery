@@ -48,5 +48,8 @@
     "user_name": "Kellen Riggin",
     "user_url": "https://unsplash.com/@kalaniparker?utm_source=unsample&utm_medium=referral&utm_campaign=api-credit",
     "photo_url": "https://unsplash.com/photos/6DNgj51iXYM?utm_source=unsample&utm_medium=referral&utm_campaign=api-credit"
+  },
+  "cover": {
+    "credit": "Photo by Shyam on Unsplash"
   }
 }

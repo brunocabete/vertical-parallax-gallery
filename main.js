@@ -7,7 +7,10 @@ const eachSlide = img =>
     <img src="./img/${img}.jpg" alt="">
   </div>
   <div class="container-description">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+  <div class="container-description-inner">
+  <p><cite>Photo ${img}</cite> - John Doe </p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias qui aliquid a amet voluptates repudiandae!</p>
+  </div>
   </div>
 </div>
 </div>`
