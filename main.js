@@ -33,6 +33,7 @@ const eachSlideAlt = img =>  /*html*/`<div class="general-container split" id="$
 
 const finalSlide = () =>  /*html*/`<div class="general-container final" id="final">
 <div class="general-container-inner ">
+<a class="go-back" href="#">Back</a>
   <div class="bg" >
   </div>
   <div class="container-content-final">
