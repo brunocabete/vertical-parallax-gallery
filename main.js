@@ -137,14 +137,13 @@ document.getElementById('down-arrow').addEventListener('click', (ev) => {
   const eachSlideOffset = []
   document.querySelectorAll('.general-container').forEach((v) => {
     if (v.offsetTop > window.scrollY) {
-      eachSlideOffset.push(v.offsetTop)
       eachSlideOffset.push(v.offsetTop + descriptionDeadzone + 10)
     }
   })
   eachSlideOffset.sort(function (a, b) { return a - b })
   console.log(eachSlideOffset)
   window.scroll({
-    top: eachSlideOffset[1],
+    top: eachSlideOffset[0],
     left: 0,
     behavior: 'smooth'
   })
