@@ -136,7 +136,8 @@ document.addEventListener('scroll', () => {
 document.getElementById('down-arrow').addEventListener('click', (ev) => {
   const eachSlideOffset = []
   document.querySelectorAll('.general-container').forEach((v) => {
-    if (v.offsetTop > window.scrollY) {
+    if (v.offsetTop > Math.ceil(window.scrollY)) {
+      console.log(v.offsetTop, window.scrollY)
       eachSlideOffset.push(v.offsetTop + descriptionDeadzone + 10)
     }
   })
