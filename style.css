@@ -3,7 +3,7 @@ body {
 }
 :root {
   --deadzone: 1000px;
-  --bg-color: #272e339c;
+  --bg-color: #27332c9c;
 }
 @media (max-width: 768px) {
   :root {
@@ -17,10 +17,71 @@ p {
 cite {
   font-style: italic;
 }
-
+#progressbar {
+  position: fixed;
+  right: 20px;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+#progressbar .bar {
+  height: 90%;
+  width: 15px;
+  background-color: rgba(255, 255, 255, 0.11);
+  border-radius: 30px;
+  position: relative;
+}
+#progressbar .pointer {
+  position: absolute;
+  width: 100%;
+  transform: scaleX(1.5) translateY(-50%);
+  height: 7px;
+  top: 1%;
+  background-color: #ffffff6b;
+  transition: top 0.1;
+}
+#progressbar .marker {
+  position: absolute;
+  width: 79%;
+  left: 10%;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  top: 5%;
+}
 img {
   height: 100vh;
   margin: 0 auto;
+  display: block;
+}
+#down-arrow {
+  cursor: pointer;
+  position: fixed;
+  z-index: 10;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  background-color: var(--bg-color);
+  border-radius: 100%;
+  height: 35px;
+  width: 35px;
+}
+#down-arrow svg {
+  width: 100%;
+  height: 100%;
+}
+a.go-back {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  padding: 10px 15px;
+  border: solid 1px white;
   display: block;
 }
 
@@ -51,6 +112,9 @@ img {
 
 .cover a {
   color: white;
+}
+.cover p {
+  max-width: 60%;
 }
 .cover a:hover {
   text-decoration: underline;
@@ -127,7 +191,7 @@ h1 {
   width: 100%;
   position: absolute;
   bottom: 0;
-  padding-bottom: 25px;
+  padding-bottom: 60px;
   transform: translateY(200%);
   transition: transform 0.5s;
   display: flex;
@@ -242,6 +306,10 @@ h1 {
     color: black;
     height: 50vh;
   }
+  .container-text-inner {
+    padding-bottom: 50px;
+    overflow-y: auto;
+  }
   .to-the-side {
     height: 100%;
     object-fit: contain;
@@ -264,5 +332,14 @@ h1 {
   }
   .final li {
     font-size: 16px;
+  }
+  .cover p {
+    max-width: 90%;
+  }
+  #progressbar {
+    right: 5px;
+  }
+  #progressbar .bar {
+    width: 12px;
   }
 }
