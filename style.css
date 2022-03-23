@@ -228,15 +228,29 @@ h1 {
 .final {
   height: 100vh;
   background-color: #0f0e0e;
+  z-index: 11;
 }
-
+.footer {
+  height: 100px;
+  width: 100%;
+}
+.footer > div {
+  margin: 10px auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+.footer img {
+  width: 100px;
+  height: auto;
+}
 .container-content-final {
   color: white;
-  padding: 5%;
+  padding: 0 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   height: 100vh;
 }
 
@@ -318,6 +332,9 @@ h1 {
     width: 100%;
     margin: 5px 0;
     justify-content: space-between;
+  }
+  .footer > div {
+    width: 100%;
   }
   .final h2 {
     font-size: 25px;

@@ -36,7 +36,7 @@ const finalSlide = () =>  /*html*/`<div class="general-container final" id="fina
   <div class="bg" >
   </div>
   <div class="container-content-final">
-   <h2>Final Slide</h2>
+   <h2>Lorem ipsum</h2>
    <div class="row-of-credits">
    <ul>
    <span>Lorem Ipsum</span>
@@ -74,6 +74,16 @@ const finalSlide = () =>  /*html*/`<div class="general-container final" id="fina
    <li>Lorenzo Ipsum</li>
    <li>Loiane Ipsum</li>
    </ul>
+   </div>
+   <div class="footer">
+   <div>
+   <img src="./img/logoipsum-logo-8.svg" alt="" />
+   <img src="./img/logoipsum-logo-10.svg" alt="" />
+   <img src="./img/logoipsum-logo-22.svg" alt="" />
+   </div>
+   <div>
+   <p>© Lorem ipsum dolor</p>
+   </div>
    </div>
   </div>
 </div>
