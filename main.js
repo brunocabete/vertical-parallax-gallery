@@ -140,7 +140,7 @@ document.addEventListener('scroll', () => {
   })
 
   document.querySelector('#progressbar .pointer').style.top = `${(window.scrollY / document.body.clientHeight * 100).toFixed(2)}%`
-  console.log()
+
 })
 
 
@@ -148,12 +148,12 @@ document.getElementById('down-arrow').addEventListener('click', (ev) => {
   const eachSlideOffset = []
   document.querySelectorAll('.general-container').forEach((v) => {
     if (v.offsetTop > Math.ceil(window.scrollY)) {
-      console.log(v.offsetTop, window.scrollY)
+
       eachSlideOffset.push(v.offsetTop + descriptionDeadzone + 10)
     }
   })
   eachSlideOffset.sort(function (a, b) { return a - b })
-  console.log(eachSlideOffset)
+
   window.scroll({
     top: eachSlideOffset[0],
     left: 0,
@@ -172,7 +172,6 @@ const markersPositions = eachslidePosition.map((v) => {
   return (v / document.body.clientHeight * 100).toFixed(2) + '%'
 })
 
-console.log(markersPositions)
 
 markersPositions.forEach((v) => {
 
