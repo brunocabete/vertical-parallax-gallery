@@ -2,140 +2,570 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Museu Desconhecido: Cores e Formas da Natureza</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
-  <script defer src="main.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museu Desconhecido: Cores e Formas da Natureza</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="prerender.js"></script>
 </head>
 
 
 <body>
-  <!-- Author: Bruno Cabete (Inova House)
+    <!-- Author: Bruno Cabete (Inova House)
   GitHub: brunocabete -->
-  <div id="progressbar">
-    <div class="bar">
-      <div class="pointer"></div>
+    <div id="progressbar">
+        <div class="bar">
+            <div class="pointer"></div>
+        </div>
     </div>
-  </div>
-  <button id="down-arrow">
-    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-      x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512; fill: white;"
-      xml:space="preserve">
-      <g>
-        <g>
-          <g>
-            <path d="M256,0C114.618,0,0,114.618,0,256s114.618,256,256,256s256-114.618,256-256S397.382,0,256,0z M256,469.333
+    <button id="down-arrow">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512; fill: white;"
+            xml:space="preserve">
+            <g>
+                <g>
+                    <g>
+                        <path d="M256,0C114.618,0,0,114.618,0,256s114.618,256,256,256s256-114.618,256-256S397.382,0,256,0z M256,469.333
             c-117.818,0-213.333-95.515-213.333-213.333S138.182,42.667,256,42.667S469.333,138.182,469.333,256S373.818,469.333,256,469.333
             z" />
-            <path d="M347.582,198.248L256,289.83l-91.582-91.582c-8.331-8.331-21.839-8.331-30.17,0c-8.331,8.331-8.331,21.839,0,30.17
+                        <path d="M347.582,198.248L256,289.83l-91.582-91.582c-8.331-8.331-21.839-8.331-30.17,0c-8.331,8.331-8.331,21.839,0,30.17
             l106.667,106.667c8.331,8.331,21.839,8.331,30.17,0l106.667-106.667c8.331-8.331,8.331-21.839,0-30.17
             C369.42,189.917,355.913,189.917,347.582,198.248z" />
-          </g>
-        </g>
-      </g>
-    </svg>
-  </button>
-  <div class="cover">
-    <a class="go-back" href="https://museufelicialeirner.org.br">Site do Museu</a>
-    <div class="cover-inner">
+                    </g>
+                </g>
+            </g>
+        </svg>
+    </button>
+    <div class="cover">
+        <a class="go-back" href="https://museufelicialeirner.org.br">Site do Museu</a>
+        <div class="cover-inner">
 
-      <p>
-        EXPOSIÇÃO VIRTUAL
-      </p>
-      <h1>
-        MUSEU DESCONHECIDO: CORES E FORMAS DA NATUREZA</h1>
+            <p>
+                EXPOSIÇÃO VIRTUAL
+            </p>
+            <h1>
+                MUSEU DESCONHECIDO: CORES E FORMAS DA NATUREZA</h1>
 
-      <p>A diversidade de espécies existentes no fragmento de Mata Atlântica em que estão localizados o Museu Felícia
-        Leirner e o Auditório Claudio Santoro, constitui uma sinfonia de cores, formas e texturas. Composta por árvores,
-        flores, arbustos, plantas rasteiras, epífitas e fungos, a reserva caracteriza-se como Floresta Ombrófila Mista,
-        com presença de Araucárias, Quaresmeiras, Brincos de Princesa e Samambaiaçus, que contribuem para a conservação
-        da
-        biodiversidade.
-      </p>
-      <p>
-        Para quem caminha pelas alamedas do museu, a natureza em harmonia com o acervo de esculturas convida para um
-        universo desconhecido que guarda pequenas e grandes belezas. Assim, a exposição virtual “Museu Desconhecido:
-        Cores
-        e Formas da Natureza” é um recorte da diversidade de espécies do Museu Felícia Leirner, revelando a riqueza dos
-        detalhes e reconhecendo as funções ecológicas de cada categoria.
-      </p>
-      <div class="social-links">
-        <figure>
-          <a href="https://twitter.com/mfelicialeirner">
+            <p>A diversidade de espécies existentes no fragmento de Mata Atlântica em que estão localizados o Museu
+                Felícia
+                Leirner e o Auditório Claudio Santoro, constitui uma sinfonia de cores, formas e texturas. Composta por
+                árvores,
+                flores, arbustos, plantas rasteiras, epífitas e fungos, a reserva caracteriza-se como Floresta Ombrófila
+                Mista,
+                com presença de Araucárias, Quaresmeiras, Brincos de Princesa e Samambaiaçus, que contribuem para a
+                conservação
+                da
+                biodiversidade.
+            </p>
+            <p>
+                Para quem caminha pelas alamedas do museu, a natureza em harmonia com o acervo de esculturas convida
+                para um
+                universo desconhecido que guarda pequenas e grandes belezas. Assim, a exposição virtual “Museu
+                Desconhecido:
+                Cores
+                e Formas da Natureza” é um recorte da diversidade de espécies do Museu Felícia Leirner, revelando a
+                riqueza dos
+                detalhes e reconhecendo as funções ecológicas de cada categoria.
+            </p>
+            <div class="social-links">
+                <figure>
+                    <a href="https://twitter.com/mfelicialeirner">
 
-            <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
-              version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-              xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path
-                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
-            </svg>
-          </a>
-        </figure>
-        <figure>
-          <a href="https://www.instagram.com/museufelicialeirner/">
+                        <svg height="100%"
+                            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+                            version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path
+                                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
+                        </svg>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="https://www.instagram.com/museufelicialeirner/">
 
-            <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
-              version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-              xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path
-                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-193.446,81c-47.527,0 -53.487,0.201 -72.152,1.053c-18.627,0.85 -31.348,3.808 -42.48,8.135c-11.508,4.472 -21.267,10.456 -30.996,20.184c-9.729,9.729 -15.713,19.489 -20.185,30.996c-4.326,11.132 -7.284,23.853 -8.135,42.48c-0.851,18.665 -1.052,24.625 -1.052,72.152c0,47.527 0.201,53.487 1.052,72.152c0.851,18.627 3.809,31.348 8.135,42.48c4.472,11.507 10.456,21.267 20.185,30.996c9.729,9.729 19.488,15.713 30.996,20.185c11.132,4.326 23.853,7.284 42.48,8.134c18.665,0.852 24.625,1.053 72.152,1.053c47.527,0 53.487,-0.201 72.152,-1.053c18.627,-0.85 31.348,-3.808 42.48,-8.134c11.507,-4.472 21.267,-10.456 30.996,-20.185c9.729,-9.729 15.713,-19.489 20.185,-30.996c4.326,-11.132 7.284,-23.853 8.134,-42.48c0.852,-18.665 1.053,-24.625 1.053,-72.152c0,-47.527 -0.201,-53.487 -1.053,-72.152c-0.85,-18.627 -3.808,-31.348 -8.134,-42.48c-4.472,-11.507 -10.456,-21.267 -20.185,-30.996c-9.729,-9.728 -19.489,-15.712 -30.996,-20.184c-11.132,-4.327 -23.853,-7.285 -42.48,-8.135c-18.665,-0.852 -24.625,-1.053 -72.152,-1.053Zm0,31.532c46.727,0 52.262,0.178 70.715,1.02c17.062,0.779 26.328,3.63 32.495,6.025c8.169,3.175 13.998,6.968 20.122,13.091c6.124,6.124 9.916,11.954 13.091,20.122c2.396,6.167 5.247,15.433 6.025,32.495c0.842,18.453 1.021,23.988 1.021,70.715c0,46.727 -0.179,52.262 -1.021,70.715c-0.778,17.062 -3.629,26.328 -6.025,32.495c-3.175,8.169 -6.967,13.998 -13.091,20.122c-6.124,6.124 -11.953,9.916 -20.122,13.091c-6.167,2.396 -15.433,5.247 -32.495,6.025c-18.45,0.842 -23.985,1.021 -70.715,1.021c-46.73,0 -52.264,-0.179 -70.715,-1.021c-17.062,-0.778 -26.328,-3.629 -32.495,-6.025c-8.169,-3.175 -13.998,-6.967 -20.122,-13.091c-6.124,-6.124 -9.917,-11.953 -13.091,-20.122c-2.396,-6.167 -5.247,-15.433 -6.026,-32.495c-0.842,-18.453 -1.02,-23.988 -1.02,-70.715c0,-46.727 0.178,-52.262 1.02,-70.715c0.779,-17.062 3.63,-26.328 6.026,-32.495c3.174,-8.168 6.967,-13.998 13.091,-20.122c6.124,-6.123 11.953,-9.916 20.122,-13.091c6.167,-2.395 15.433,-5.246 32.495,-6.025c18.453,-0.842 23.988,-1.02 70.715,-1.02Zm0,53.603c-49.631,0 -89.865,40.234 -89.865,89.865c0,49.631 40.234,89.865 89.865,89.865c49.631,0 89.865,-40.234 89.865,-89.865c0,-49.631 -40.234,-89.865 -89.865,-89.865Zm0,148.198c-32.217,0 -58.333,-26.116 -58.333,-58.333c0,-32.217 26.116,-58.333 58.333,-58.333c32.217,0 58.333,26.116 58.333,58.333c0,32.217 -26.116,58.333 -58.333,58.333Zm114.416,-151.748c0,11.598 -9.403,20.999 -21.001,20.999c-11.597,0 -20.999,-9.401 -20.999,-20.999c0,-11.598 9.402,-21 20.999,-21c11.598,0 21.001,9.402 21.001,21Z" />
-            </svg>
-          </a>
-        </figure>
-        <figure>
-          <a href="https://facebook.com/museufelicialeirner">
+                        <svg height="100%"
+                            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+                            version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path
+                                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-193.446,81c-47.527,0 -53.487,0.201 -72.152,1.053c-18.627,0.85 -31.348,3.808 -42.48,8.135c-11.508,4.472 -21.267,10.456 -30.996,20.184c-9.729,9.729 -15.713,19.489 -20.185,30.996c-4.326,11.132 -7.284,23.853 -8.135,42.48c-0.851,18.665 -1.052,24.625 -1.052,72.152c0,47.527 0.201,53.487 1.052,72.152c0.851,18.627 3.809,31.348 8.135,42.48c4.472,11.507 10.456,21.267 20.185,30.996c9.729,9.729 19.488,15.713 30.996,20.185c11.132,4.326 23.853,7.284 42.48,8.134c18.665,0.852 24.625,1.053 72.152,1.053c47.527,0 53.487,-0.201 72.152,-1.053c18.627,-0.85 31.348,-3.808 42.48,-8.134c11.507,-4.472 21.267,-10.456 30.996,-20.185c9.729,-9.729 15.713,-19.489 20.185,-30.996c4.326,-11.132 7.284,-23.853 8.134,-42.48c0.852,-18.665 1.053,-24.625 1.053,-72.152c0,-47.527 -0.201,-53.487 -1.053,-72.152c-0.85,-18.627 -3.808,-31.348 -8.134,-42.48c-4.472,-11.507 -10.456,-21.267 -20.185,-30.996c-9.729,-9.728 -19.489,-15.712 -30.996,-20.184c-11.132,-4.327 -23.853,-7.285 -42.48,-8.135c-18.665,-0.852 -24.625,-1.053 -72.152,-1.053Zm0,31.532c46.727,0 52.262,0.178 70.715,1.02c17.062,0.779 26.328,3.63 32.495,6.025c8.169,3.175 13.998,6.968 20.122,13.091c6.124,6.124 9.916,11.954 13.091,20.122c2.396,6.167 5.247,15.433 6.025,32.495c0.842,18.453 1.021,23.988 1.021,70.715c0,46.727 -0.179,52.262 -1.021,70.715c-0.778,17.062 -3.629,26.328 -6.025,32.495c-3.175,8.169 -6.967,13.998 -13.091,20.122c-6.124,6.124 -11.953,9.916 -20.122,13.091c-6.167,2.396 -15.433,5.247 -32.495,6.025c-18.45,0.842 -23.985,1.021 -70.715,1.021c-46.73,0 -52.264,-0.179 -70.715,-1.021c-17.062,-0.778 -26.328,-3.629 -32.495,-6.025c-8.169,-3.175 -13.998,-6.967 -20.122,-13.091c-6.124,-6.124 -9.917,-11.953 -13.091,-20.122c-2.396,-6.167 -5.247,-15.433 -6.026,-32.495c-0.842,-18.453 -1.02,-23.988 -1.02,-70.715c0,-46.727 0.178,-52.262 1.02,-70.715c0.779,-17.062 3.63,-26.328 6.026,-32.495c3.174,-8.168 6.967,-13.998 13.091,-20.122c6.124,-6.123 11.953,-9.916 20.122,-13.091c6.167,-2.395 15.433,-5.246 32.495,-6.025c18.453,-0.842 23.988,-1.02 70.715,-1.02Zm0,53.603c-49.631,0 -89.865,40.234 -89.865,89.865c0,49.631 40.234,89.865 89.865,89.865c49.631,0 89.865,-40.234 89.865,-89.865c0,-49.631 -40.234,-89.865 -89.865,-89.865Zm0,148.198c-32.217,0 -58.333,-26.116 -58.333,-58.333c0,-32.217 26.116,-58.333 58.333,-58.333c32.217,0 58.333,26.116 58.333,58.333c0,32.217 -26.116,58.333 -58.333,58.333Zm114.416,-151.748c0,11.598 -9.403,20.999 -21.001,20.999c-11.597,0 -20.999,-9.401 -20.999,-20.999c0,-11.598 9.402,-21 20.999,-21c11.598,0 21.001,9.402 21.001,21Z" />
+                        </svg>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="https://facebook.com/museufelicialeirner">
 
-            <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
-              version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-              xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path
-                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
-            </svg>
-          </a>
-        </figure>
-        <figure>
-          <a href="https://www.youtube.com/user/museufelicialeirner">
+                        <svg height="100%"
+                            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+                            version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path
+                                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+                        </svg>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="https://www.youtube.com/user/museufelicialeirner">
 
-            <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
-              version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-              xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path
-                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-20.967,175.63c-4.139,-15.489 -16.337,-27.687 -31.826,-31.826c-28.078,-7.524 -140.653,-7.524 -140.653,-7.524c0,0 -112.575,0 -140.653,7.524c-15.486,4.139 -27.686,16.337 -31.826,31.826c-7.521,28.075 -7.521,86.652 -7.521,86.652c0,0 0,58.576 7.521,86.648c4.14,15.489 16.34,27.69 31.826,31.829c28.078,7.521 140.653,7.521 140.653,7.521c0,0 112.575,0 140.653,-7.521c15.489,-4.139 27.687,-16.34 31.826,-31.829c7.521,-28.072 7.521,-86.648 7.521,-86.648c0,0 0,-58.577 -7.521,-86.652Zm-208.481,140.653l0,-108.002l93.53,54.001l-93.53,54.001Z" />
-            </svg>
-          </a>
-        </figure>
-        <figure>
-          <a href="https://tiktok.com/@museufelicialeirner">
-            <svg viewBox="4 4 42 42" xmlns="http://www.w3.org/2000/svg" width="2500" height="2500">
-              <path
-                d="M41 4H9C6.243 4 4 6.243 4 9v32c0 2.757 2.243 5 5 5h32c2.757 0 5-2.243 5-5V9c0-2.757-2.243-5-5-5m-3.994 18.323a7.482 7.482 0 0 1-.69.035 7.492 7.492 0 0 1-6.269-3.388v11.537a8.527 8.527 0 1 1-8.527-8.527c.178 0 .352.016.527.027v4.202c-.175-.021-.347-.053-.527-.053a4.351 4.351 0 1 0 0 8.704c2.404 0 4.527-1.894 4.527-4.298l.042-19.594h4.02a7.488 7.488 0 0 0 6.901 6.685v4.67" />
-            </svg>
-          </a>
-        </figure>
-      </div>
+                        <svg height="100%"
+                            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+                            version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path
+                                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-20.967,175.63c-4.139,-15.489 -16.337,-27.687 -31.826,-31.826c-28.078,-7.524 -140.653,-7.524 -140.653,-7.524c0,0 -112.575,0 -140.653,7.524c-15.486,4.139 -27.686,16.337 -31.826,31.826c-7.521,28.075 -7.521,86.652 -7.521,86.652c0,0 0,58.576 7.521,86.648c4.14,15.489 16.34,27.69 31.826,31.829c28.078,7.521 140.653,7.521 140.653,7.521c0,0 112.575,0 140.653,-7.521c15.489,-4.139 27.687,-16.34 31.826,-31.829c7.521,-28.072 7.521,-86.648 7.521,-86.648c0,0 0,-58.577 -7.521,-86.652Zm-208.481,140.653l0,-108.002l93.53,54.001l-93.53,54.001Z" />
+                        </svg>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="https://tiktok.com/@museufelicialeirner">
+                        <svg viewBox="4 4 42 42" xmlns="http://www.w3.org/2000/svg" width="2500" height="2500">
+                            <path
+                                d="M41 4H9C6.243 4 4 6.243 4 9v32c0 2.757 2.243 5 5 5h32c2.757 0 5-2.243 5-5V9c0-2.757-2.243-5-5-5m-3.994 18.323a7.482 7.482 0 0 1-.69.035 7.492 7.492 0 0 1-6.269-3.388v11.537a8.527 8.527 0 1 1-8.527-8.527c.178 0 .352.016.527.027v4.202c-.175-.021-.347-.053-.527-.053a4.351 4.351 0 1 0 0 8.704c2.404 0 4.527-1.894 4.527-4.298l.042-19.594h4.02a7.488 7.488 0 0 0 6.901 6.685v4.67" />
+                        </svg>
+                    </a>
+                </figure>
+            </div>
+        </div>
+
+        <div id="cover-bg">
+            <img src="./img/capa.jpg" alt="">
+        </div>
     </div>
+    <div id="outer-container">
+        <div class="general-container split" id="1">
+            <div class="general-container-inner">
+                <div class="bg" style="background-image: url(./img/1.jpg);">
+                </div>
+                <div class="container-text">
+                    <div class="container-text-inner">
+                        <p><cite>ARAUCÁRIA</cite></p>
+                        <p>De copa larga, a <i>Araucaria angustifólia</i>, conhecida apenas como Araucária, pode atingir
+                            até 50 metros de altura. É um gênero de árvore dióica, ou seja, que possui sexos separados.
+                            A Araucária fêmea é caracterizada pela pinha e o macho pelo estróbilo. Quando o estróbilo
+                            amadurece libera o pólen que se dispersa pelo vento e fertiliza a pinha. Após dois anos, as
+                            sementes amadurecem e é quando ocorre o desprendimento dos grãos (sementes), conhecidos como
+                            pinhões. Eles são importantes para a manutenção da biodiversidade, servindo de alimento para
+                            diversos animais como o serelepe, a gralha-do-campo e também os seres humanos.</p>
+                        <p>
+                            Devido à exploração, a Araucária está na lista de flora brasileira ameaçada de extinção. O
+                            reflorestamento, a partir das mudas, é uma ação estratégica de preservação da espécie, da
+                            biodiversidade e da minimização dos efeitos das mudanças climáticas.
+                            A Araucária é árvore-símbolo de Campos do Jordão e, no Museu Felícia Leirner, elas estão nos
+                            jardins, entre as alamedas, ao lado de esculturas e na mata ao redor.
+                        </p>
+                    </div>
+                </div>
+                <div class="container-img">
+                    <img class="to-the-side" src="./img/1.jpg" alt="" loading="lazy">
+                </div>
+            </div>
+        </div>
+        <div class="general-container" id="2">
+            <div class="general-container-inner">
+                <div class="bg" style="background-image: url(./img/2.jpg);">
+                </div>
+                <div class="container-img">
+                    <img src="./img/2.jpg" alt="" loading="lazy">
+                </div>
+                <div class="container-description">
+                    <div class="container-description-inner">
+                        <p><cite>SUCUPIRA</cite></p>
+                        <p>A Sucupira, <i>Pterodon emarginatus</i>, é uma árvore nativa da Mata Atlântica e tem o tronco
+                            revestido por uma casca com ritidoma com uma textura semelhante à de uma rolha. Essa casca
+                            protege os tecidos do excesso de evaporação e do contato com agentes nocivos presentes no
+                            ambiente. Além disso, sua raiz pode formar expansões que são conhecidas como
+                            “batata-de-sucupira” que atuam como áreas de reserva da planta. A Sucupira pode ser
+                            encontrada nos jardins do Museu Felícia Leirner, próximo à “Fase Orgânica”.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="general-container" id="3">
+            <div class="general-container-inner">
+                <div class="bg" style="background-image: url(./img/3.jpg);">
+                </div>
+                <div class="container-img">
+                    <img src="./img/3.jpg" alt="" loading="lazy">
+                </div>
+                <div class="container-description">
+                    <div class="container-description-inner">
+                        <p><cite>AGARICUS</cite></p>
+                        <p><i>Agaricus</i> é um importante gênero de cogumelos. Com tamanho médio, chapéu hemisférico,
+                            pé cilíndrico e cor esbranquiçada, essa categoria possui espécies comestíveis e venenosas.
+                            No Museu, eles estão nos jardins, tendo ocorrência próximo às hortênsias a caminho da
+                            bilheteria. </p>
 
-    <div id="cover-bg">
-      <img src="./img/capa.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="general-container split" id="4">
+            <div class="general-container-inner">
+                <div class="bg" style="background-image: url(./img/4.jpg);">
+                </div>
+                <div class="container-text">
+                    <div class="container-text-inner">
+                        <p><cite>PAINEIRA</cite></p>
+                        <p>
+                            Da família <i>Malvaceae</i>, a Paineira é uma árvore nativa que pode chegar até 30 metros de
+                            altura. No museu, ela está presente no início do percurso cronológico, próximo às esculturas
+                            em bronze pertencentes à fase “Figurativa”.
+                            Seu tronco possui acúleos, popularmente chamados de espinhos, que contrastam com a
+                            delicadeza e beleza das flores cor-de-rosa comuns entre o verão e o início do outono. Os
+                            acúleos atuam como proteção, afastando as ameaças.
+                        </p>
+                        <p>Os frutos assemelham-se com cápsulas que liberam sementes utilizadas para a produção de novas
+                            mudas disponibilizadas para ações de reflorestamento e preservação ambiental. </p>
+                    </div>
+                </div>
+                <div class="container-img">
+                    <img class="to-the-side" src="./img/4.jpg" alt="" loading="lazy">
+                </div>
+            </div>
+        </div>
+        <div class="general-container" id="5">
+            <div class="general-container-inner">
+                <div class="bg" style="background-image: url(./img/5.jpg);">
+                </div>
+                <div class="container-img">
+                    <img src="./img/5.jpg" alt="" loading="lazy">
+                </div>
+                <div class="container-description">
+                    <div class="container-description-inner">
+                        <p><cite>LANGSDORFFIA HYPOGAEA</cite></p>
+                        <p><i>Langsdorffia hypogaea</i> é uma planta parasita encontrada na floresta ombrófila que cerca
+                            os jardins do Museu Felícia Leirner. Elas possuem tubérculos subterrâneos e talos com folhas
+                            escamosas. É utilizada na confecção de velas no centro-oeste brasileiro.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="general-container" id="6">
+            <div class="general-container-inner">
+                <div class="bg" style="background-image: url(./img/6.jpg);">
+                </div>
+                <div class="container-img">
+                    <img src="./img/6.jpg" alt="" loading="lazy">
+                </div>
+                <div class="container-description">
+                    <div class="container-description-inner">
+                        <p><cite>PIXIRICA</cite></p>
+                        <p>A Pixirica, ou <i>Clidemia hirta</i>, é um arbusto que cresce até dois metros de altura.
+                            Possui frutos pequenos na cor azul escuro e arroxeados. Suas folhas têm uso medicinal,
+                            enquanto seu fruto pode ser consumido pela fauna local e também pelos seres humanos. Na
+                            época de floração, ela atrai abelhas para a polinização. No Museu, estão próximas às escadas
+                            que dão acesso ao mirante.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="general-container split" id="7">
+            <div class="general-container-inner">
+                <div class="bg" style="background-image: url(./img/7.jpg);">
+                </div>
+                <div class="container-text">
+                    <div class="container-text-inner">
+                        <p><cite>MANACÁ DA SERRA</cite></p>
+                        <p>O Manacá da Serra, <i>Tibouchina mutabilis</i>, é uma espécie nativa da Mata Atlântica que
+                            pode chegar a até 12 metros de altura. Seu nome, <i>mutabilis</i>, significa mutável, que
+                            justifica o fato de suas flores mudarem de cor. Nas cores branca e rosa, as pétalas
+                            contrastam com o verde-escuro das folhas que são rijas e pilosas.</p>
+                        <p>
+                            Ela floresce entre os meses de novembro e fevereiro, estendendo-se em algumas regiões. Tem
+                            um apelo paisagístico pelo porte pequeno e por suas raízes não agressivas ao calçamento. O
+                            Manacá é muito útil e importante para o reflorestamento de áreas de preservação.
+                            No Museu Felícia Leirner é possível encontrá-lo nos jardins, entre as alamedas e próximo às
+                            esculturas em cimento armado. O Manacá da Serra é ainda uma das espécies presentes no
+                            viveiro de mudas da instituição.
+                        </p>
+                    </div>
+                </div>
+                <div class="container-img">
+                    <img class="to-the-side" src="./img/7.jpg" alt="" loading="lazy">
+                </div>
+            </div>
+        </div>
+        <div class="general-container" id="8">
+            <div class="general-container-inner">
+                <div class="bg" style="background-image: url(./img/8.jpg);">
+                </div>
+                <div class="container-img">
+                    <img src="./img/8.jpg" alt="" loading="lazy">
+                </div>
+                <div class="container-description">
+                    <div class="container-description-inner">
+                        <p><cite>CHROMOLAENA</cite></p>
+                        <p><i>Chromolaena</i> é um gênero pertencente à família Asteraceae. Está presente próximo ao
+                            mirante do Museu Felícia Leirner. Suas flores na cor lilás contrastam com as folhas verdes
+                            ovaladas, atraindo insetos como borboletas e abelhas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="general-container" id="9">
+            <div class="general-container-inner">
+                <div class="bg" style="background-image: url(./img/9.jpg);">
+                </div>
+                <div class="container-img">
+                    <img src="./img/9.jpg" alt="" loading="lazy">
+                </div>
+                <div class="container-description">
+                    <div class="container-description-inner">
+                        <p><cite>HYDNOPOLYPORUS</cite></p>
+                        <p><i>Hydnopolyporus</i> é um gênero de fungo pertencente à família <i>Meripilaceae</i> que
+                            participa ativamente na ciclagem de nutrientes e na decomposição. No Museu Felícia Leirner é
+                            possível encontrá-los em raízes expostas e no tronco das árvores.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="general-container split" id="10">
+            <div class="general-container-inner">
+                <div class="bg" style="background-image: url(./img/10.jpg);">
+                </div>
+                <div class="container-text">
+                    <div class="container-text-inner">
+                        <p><cite>SAMAMBAIAÇU</cite></p>
+                        <p>Nativa da Mata Atlântica, Samambaiaçu, também conhecida por xaxim, possui caule ereto e ramos
+                            que chegam a até dois metros. A incidência dessa espécie, <i>Dicksonia sellowiana</i>, se dá
+                            em região de sombra ou meia-sombra, em terrenos úmidos e ricos em matéria orgânica, servindo
+                            de suporte para plantas epífitas como bromélias e orquídeas. </p>
+                        <p>
+                            O tronco da Samambaiaçu dá origem a substratos e vasos utilizados nos cultivos de diversas
+                            plantas. Devido à exploração comercial, entrou para a lista de ameaçados de extinção, sendo
+                            assim, a extração e a industrialização do xaxim são, hoje, proibidas por lei.
+                            A Samambaiaçu se multiplica por meio de esporos e seu crescimento é lento, cerca de cinco a
+                            oito centímetros por ano. No Museu Felícia Leirner elas estão presentes na mata e nos
+                            jardins de esculturas, dentro das áreas sombreadas.
+                        </p>
+                    </div>
+                </div>
+                <div class="container-img">
+                    <img class="to-the-side" src="./img/10.jpg" alt="" loading="lazy">
+                </div>
+            </div>
+        </div>
+        <div class="general-container" id="11">
+            <div class="general-container-inner">
+                <div class="bg" style="background-image: url(./img/11.jpg);">
+                </div>
+                <div class="container-img">
+                    <img src="./img/11.jpg" alt="" loading="lazy">
+                </div>
+                <div class="container-description">
+                    <div class="container-description-inner">
+                        <p><cite>MIMOSA PUDICA</cite></p>
+                        <p>Com flores que parecem pompons, as dormideiras, <i>Mimosa pudica</i>, se desenvolvem em áreas
+                            de meia-sombra ou sol pleno. Quando tocadas, fecham suas folhas como estratégia natural de
+                            defesa. Elas podem ser encontradas próximas ao viveiro de mudas do Museu Felícia Leirner.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="general-container" id="12">
+            <div class="general-container-inner">
+                <div class="bg" style="background-image: url(./img/12.jpg);">
+                </div>
+                <div class="container-img">
+                    <img src="./img/12.jpg" alt="" loading="lazy">
+                </div>
+                <div class="container-description">
+                    <div class="container-description-inner">
+                        <p><cite>AECHMEA DISTICHANTHA</cite></p>
+                        <p><i>Aechmea distichantha</i> é uma espécie de bromélia nativa de porte médio que atrai abelhas
+                            e pássaros para polinização. Suas flores possuem pétalas azuis, brancas e rosadas. São
+                            plantas epífitas que se desenvolvem sobre outras sem causar nenhum prejuízo. No Museu
+                            Felícia Leirner podemos encontrá-las nos galhos e troncos das araucárias.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="general-container split" id="13">
+            <div class="general-container-inner">
+                <div class="bg" style="background-image: url(./img/13.jpg);">
+                </div>
+                <div class="container-text">
+                    <div class="container-text-inner">
+                        <p><cite>BRINCO-DE-PRINCESA</cite></p>
+                        <p>
+                            O brinco-de-princesa é uma espécie híbrida do gênero <i>fuchsia</i>. Ela é um arbusto perene
+                            que pode atingir até três metros de altura. Sua incidência ocorre na América do Sul, havendo
+                            cerca de 200 espécies diferentes da planta. Possui variedades de pétalas, cores e formas,
+                            sendo possível encontrá-las nas cores rosa, violeta, branca e vermelha.
+                            A planta se adapta com facilidade aos ambientes podendo ser cultivada de forma ornamental.
+                            Suporta o frio e a geada que caracterizam o inverno jordanense. A floração do
+                            brinco-de-princesa ocorre quase o ano todo, atraindo beija-flores e outros polinizadores.
+                            Sendo assim, esta espécie é importante para a manutenção da biodiversidade.
+                        </p>
+                        <p>No Museu Felícia Leirner, elas estão presentes nos jardins e próximas às alamedas, colorindo
+                            a paisagem e desempenhando um importante papel de preservação da mata ombrófila. </p>
+                    </div>
+                </div>
+                <div class="container-img">
+                    <img class="to-the-side" src="./img/13.jpg" alt="" loading="lazy">
+                </div>
+            </div>
+        </div>
+        <div class="general-container" id="14">
+            <div class="general-container-inner">
+                <div class="bg" style="background-image: url(./img/14.jpg);">
+                </div>
+                <div class="container-img">
+                    <img src="./img/14.jpg" alt="" loading="lazy">
+                </div>
+                <div class="container-description">
+                    <div class="container-description-inner">
+                        <p><cite>ONCIDIUM SP</cite></p>
+                        <p>Conhecida como chuva-de-ouro, a <i>Oncidium sp</i> é uma espécie de orquídea que apresenta
+                            flores amarelas, marrons e alaranjadas. As pétalas são bem pequenas, medindo dois
+                            centímetros e atraem borboletas. No Museu, elas podem ser encontradas perto das escadas a
+                            caminho do mirante. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="general-container" id="15">
+            <div class="general-container-inner">
+                <div class="bg" style="background-image: url(./img/15.jpg);">
+                </div>
+                <div class="container-img">
+                    <img src="./img/15.jpg" alt="" loading="lazy">
+                </div>
+                <div class="container-description">
+                    <div class="container-description-inner">
+                        <p><cite>ABELIA</cite></p>
+                        <p><i>Abelia grandiflora</i> é um arbusto que floresce entre o verão e o outono. Suas folhas são
+                            pequenas e as flores são produzidas em cachos brancos e rosa, tendo cerca de dois
+                            centímetros. Preferem solos úmidos e ricos em matéria orgânica. No Museu Felícia Leirner
+                            estão nas alamedas e escadas que dão acesso à concha acústica.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="general-container split" id="16">
+            <div class="general-container-inner">
+                <div class="bg" style="background-image: url(./img/16.jpg);">
+                </div>
+                <div class="container-text">
+                    <div class="container-text-inner">
+                        <p><cite>QUARESMEIRA</cite></p>
+                        <p>
+                            A quaresmeira, <i>Tibouchina granulosa</i>, pertencente à família <i>Melastomataceae</i>, é
+                            uma árvore nativa da Mata Atlântica que pode atingir até 12 metros de altura. Suas folhas
+                            são rijas e cruzadas, suas flores são vistosas, na cor roxa. A floração ocorre duas vezes
+                            por ano, no outono e na primavera.
+                            É uma espécie pioneira, desempenhando um papel fundamental na recuperação de áreas
+                            desmatadas, sendo útil para o reflorestamento, recuperação da flora e servindo de suporte
+                            para a fauna local.
+                        </p>
+                        <p>No Museu Felícia Leirner é possível encontrá-la nos jardins, próximos às alamedas e
+                            esculturas.</p>
+                    </div>
+                </div>
+                <div class="container-img">
+                    <img class="to-the-side" src="./img/16.jpg" alt="" loading="lazy">
+                </div>
+            </div>
+        </div>
+        <div class="general-container final" id="final">
+            <div class="general-container-inner ">
+                <a class="go-back" href="https://museufelicialeirner.org.br">Site do Museu</a>
+                <div class="bg">
+                </div>
+                <div class="container-content-final">
+                    <h2>Ficha Técnica</h2>
+                    <div class="row-of-credits">
+                        <div>
+                            <ul>
+                                <span>GOVERNO DO ESTADO DE SÃO PAULO</span>
+                                <li><strong>Rodrigo Garcia</strong><br>Governador do estado</li>
+                                <li><strong>Sérgio Sá Leitão</strong><br>Secretário de Cultura e Economia Criativa</li>
+                                <li><strong>Cláudia Pedrozo</strong><br>
+                                    Secretária Executiva de Cultura e Economia Criativa</li>
+                                <li><strong>Frederico Mascarenhas</strong><br>
+                                    Chefe de Gabinete de Cultura e Economia Criativa</li>
+                                <li><strong>Paula Paiva Ferreira</strong><br>
+                                    Coordenadora da Unidade de Preservação do Patrimônio Museológico – UPPM</li>
+                            </ul>
+
+                            <ul>
+                                <span>ACAM PORTINARI - ORGANIZAÇÃO SOCIAL DE CULTURA</span>
+                                <li><strong>Paulo Augusto Coelho de Souza</strong><br>
+                                    Presidente do Conselho Administrativo</li>
+                                <li><strong>Angelica Fabbri</strong><br>
+                                    Diretora Executiva</li>
+                                <li><strong>Luiz Antonio Bergamo</strong><br>
+                                    Diretor Administrativo Financeiro</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <span>MUSEU FELÍCIA LEIRNER E AUDITÓRIO CLAUDIO SANTORO – CAMPOS DO JORDÃO</span>
+                                <li><strong>Frederico David de Souza</strong><br>
+                                    Gerente de Unidade</li>
+                                <li><strong>Educativo</strong><br>
+                                    Ana Clara Atanazio Cunha<br>
+                                    Andreza Lima Damião<br>
+                                    Leandra Fernandes Lucio </li>
+                                <li><strong>Administrativo</strong><br>
+                                    Adina Iracema Cesarino | Assistente Administrativo<br>
+                                    Isabel Cristina dos Santos | Assistente Administrativo</li>
+                                <li><strong>Programação</strong><br>
+                                    Laila Cristina Vils Alves De Souza</li>
+                                <li><strong>Acervo</strong><br>
+                                    Letícia De Mello Menezes</li>
+                                <li><strong>Manutenção</strong><br>
+                                    Fabrício Barbosa dos Santos | Ajudante de Manutenção<br>
+                                    Weverton Candido Ferreira | Manutenção Predial</li>
+                                <li><strong>Comunicação</strong><br>
+                                    Juliana Faria da Silva | Assistente de Comunicação
+                                </li>
+                                <li><strong>Estagiários</strong><br>
+                                    Bianca Almeida de Lima | Estagiária Educativo<br>
+                                    Laura Giglio dos Santos | Estagiária de Programação<br>
+                                    Vanessa Cristina Silva e Silva | Estagiária Educativo<br>
+                                    Vitória Isabeli Rafael de Castro | Estagiária Educativo</li>
+                            </ul>
+
+                            <ul>
+                                <span>EXPOSIÇÃO VIRTUAL</span>
+                                <li><strong>Fotografia</strong><br>
+                                    Juliana Faria da Silva</li>
+                                <li><strong>Texto e Pesquisa</strong><br>
+                                    Andreza Lima Damião<br>
+                                    Juliana Faria da Silva</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="footer">
+                        <div>
+                            <p>Todos os direitos reservados © Museu Felícia Leirner e Auditório Claudio Santoro 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <div id="outer-container">
-  </div>
 </body>
 
 </html>

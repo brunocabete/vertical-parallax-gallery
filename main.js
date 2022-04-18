@@ -78,7 +78,7 @@ const eachSlide = img =>
   <div class="bg" style="background-image: url(./img/${img}.jpg);">
   </div>
   <div class="container-img">
-    <img src="./img/${img}.jpg" alt="">
+    <img src="./img/${img}.jpg" alt="" loading="lazy">
   </div>
   <div class="container-description">
   <div class="container-description-inner">
@@ -100,7 +100,7 @@ const eachSlideAlt = img =>  /*html*/`<div class="general-container split" id="$
   </div>
   </div>
   <div class="container-img">
-    <img class="to-the-side" src="./img/${img}.jpg" alt="">
+    <img class="to-the-side" src="./img/${img}.jpg" alt="" loading="lazy">
   </div>
 </div>
 </div>`
