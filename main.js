@@ -105,81 +105,86 @@ const eachSlideAlt = img =>  /*html*/`<div class="general-container split" id="$
 </div>
 </div>`
 
-const finalSlide = () =>  /*html*/`<div class="general-container final" id="final">
+const finalSlide =
+  () => /*html*/ `<div class="general-container final" id="final">
 <div class="general-container-inner ">
-<a class="go-back" href="https://museufelicialeirner.org.br">Voltar</a>
+<a class="go-back" href="https://museufelicialeirner.org.br">Site do Museu</a>
   <div class="bg" >
   </div>
   <div class="container-content-final">
    <h2>Ficha Técnica</h2>
    <div class="row-of-credits">
-   <ul class="area1">
-   <span>GOVERNO DO ESTADO DE SÃO PAULO</span>
-   <li><strong>Rodrigo Garcia</strong><br/>Governador do estado</li>
-   <li><strong>Sérgio Sá Leitão</strong><br/>Secretário de Cultura e Economia Criativa</li>
-   <li><strong>Cláudia Pedrozo</strong><br/>
-   Secretária Executiva de Cultura e Economia Criativa</li>
-   <li><strong>Frederico Mascarenhas</strong><br/>
-   Chefe de Gabinete de Cultura e Economia Criativa</li>
-   <li><strong>Paula Paiva Ferreira</strong><br/>
-   Coordenadora da Unidade de Preservação do Patrimônio Museológico – UPPM</li>
-   </ul>
+   <div>
+      <ul>
+          <span>GOVERNO DO ESTADO DE SÃO PAULO</span>
+          <li><strong>Rodrigo Garcia</strong><br/>Governador do estado</li>
+          <li><strong>Sérgio Sá Leitão</strong><br/>Secretário de Cultura e Economia Criativa</li>
+          <li><strong>Cláudia Pedrozo</strong><br/>
+          Secretária Executiva de Cultura e Economia Criativa</li>
+          <li><strong>Frederico Mascarenhas</strong><br/>
+          Chefe de Gabinete de Cultura e Economia Criativa</li>
+          <li><strong>Paula Paiva Ferreira</strong><br/>
+          Coordenadora da Unidade de Preservação do Patrimônio Museológico – UPPM</li>
+      </ul>
 
-   <ul class="area2">
-   <span>ACAM PORTINARI - ORGANIZAÇÃO SOCIAL DE CULTURA</span>
-   <li><strong>Paulo Augusto Coelho de Souza</strong><br/>
-   Presidente do Conselho Administrativo</li>
-   <li><strong>Angelica Fabbri</strong><br/>
-   Diretora Executiva</li>
-   <li><strong>Luiz Antonio Bergamo</strong><br/>
-   Diretor Administrativo Financeiro</li>
-   </ul>
+      <ul>
+      <span>ACAM PORTINARI - ORGANIZAÇÃO SOCIAL DE CULTURA</span>
+      <li><strong>Paulo Augusto Coelho de Souza</strong><br/>
+      Presidente do Conselho Administrativo</li>
+      <li><strong>Angelica Fabbri</strong><br/>
+      Diretora Executiva</li>
+      <li><strong>Luiz Antonio Bergamo</strong><br/>
+      Diretor Administrativo Financeiro</li>
+      </ul>
+      </div>
+<div>
+      <ul>
+      <span>MUSEU FELÍCIA LEIRNER E AUDITÓRIO CLAUDIO SANTORO – CAMPOS DO JORDÃO</span>
+      <li><strong>Frederico David de Souza</strong><br/>
+      Gerente de Unidade</li>
+      <li><strong>Educativo</strong><br/>
+      Ana Clara Atanazio Cunha<br/>
+      Andreza Lima Damião<br/>
+      Leandra Fernandes Lucio </li>
+      <li><strong>Administrativo</strong><br/>
+      Adina Iracema Cesarino | Assistente Administrativo<br/>
+      Isabel Cristina dos Santos | Assistente Administrativo</li>
+      <li><strong>Programação</strong><br/>
+      Laila Cristina Vils Alves De Souza</li>
+      <li><strong>Acervo</strong><br/>
+      Letícia De Mello Menezes</li>
+      <li><strong>Manutenção</strong><br/>
+      Fabrício Barbosa dos Santos | Ajudante de Manutenção<br/>
+      Weverton Candido Ferreira | Manutenção Predial</li>
+      <li><strong>Comunicação</strong><br/>
+      Juliana Faria da Silva | Assistente de Comunicação
+      </li>
+      <li><strong>Estagiários</strong><br/>
+      Bianca Almeida de Lima | Estagiária Educativo<br/>
+      Laura Giglio dos Santos | Estagiária de Programação<br/>
+      Vanessa Cristina Silva e Silva | Estagiária Educativo<br/>
+      Vitória Isabeli Rafael de Castro | Estagiária Educativo</li>
+      </ul>
 
-   <ul class="area3">
-   <span>MUSEU FELÍCIA LEIRNER E AUDITÓRIO CLAUDIO SANTORO – CAMPOS DO JORDÃO</span>
-   <li><strong>Frederico David de Souza</strong><br/>
-   Gerente de Unidade</li>
-   <li><strong>Educativo</strong><br/>
-   Ana Clara Atanazio Cunha<br/>
-   Andreza Lima Damião<br/>
-   Leandra Fernandes Lucio </li>
-   <li><strong>Administrativo</strong><br/>
-   Adina Iracema Cesarino | Assistente Administrativo<br/>
-   Isabel Cristina dos Santos | Assistente Administrativo</li>
-   <li><strong>Programação</strong><br/>
-   Laila Cristina Vils Alves De Souza</li>
-   <li><strong>Acervo</strong><br/>
-   Letícia De Mello Menezes</li>
-   <li><strong>Manutenção</strong><br/>
-   Fabrício Barbosa dos Santos | Ajudante de Manutenção<br/>
-   Weverton Candido Ferreira | Manutenção Predial</li>
-   <li><strong>Comunicação</strong><br/>
-   Juliana Faria da Silva | Assistente de Comunicação
-   </li>
-   <li><strong>Estagiários</strong><br/>
-   Bianca Almeida de Lima | Estagiária Educativo<br/>
-   Laura Giglio dos Santos | Estagiária de Programação<br/>
-   Vanessa Cristina Silva e Silva | Estagiária Educativo<br/>
-   Vitória Isabeli Rafael de Castro | Estagiária Educativo</li>
-   </ul>
+      <ul >
+      <span>EXPOSIÇÃO VIRTUAL</span>
+      <li><strong>Fotografia</strong><br/>
+      Juliana Faria da Silva</li>
+      <li><strong>Texto e Pesquisa</strong><br/>
+      Andreza Lima Damião<br/>
+      Juliana Faria da Silva</li>
+      </ul>
+</div>
 
-   <ul class="area4">
-   <span>EXPOSIÇÃO VIRTUAL</span>
-   <li><strong>Fotografia</strong><br/>
-   Juliana Faria da Silva</li>
-   <li><strong>Texto e Pesquisa</strong><br/>
-   Andreza Lima Damião<br/>
-   Juliana Faria da Silva</li>
-   </ul>
    </div>
    <div class="footer">
    <div>
-   <p>© Museu Felícia Leirner 2022</p>
+   <p>Todos os direitos reservados © Museu Felícia Leirner e Auditório Claudio Santoro 2022</p>
    </div>
    </div>
   </div>
 </div>
-</div>`
+</div>`;
 
 let element = ""
 const slideCount = 16
