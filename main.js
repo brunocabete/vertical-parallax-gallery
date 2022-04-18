@@ -75,10 +75,10 @@ const conteudo = {
 const eachSlide = img =>
   /*html*/`<div class="general-container" id="${img}">
 <div class="general-container-inner">
-  <div class="bg" style="background-image: url(./img/${img}.jpg);">
+  <div class="bg" style="background-image: url(./img/${img}.webp);">
   </div>
   <div class="container-img">
-    <img src="./img/${img}.jpg" alt="" loading="lazy">
+    <img src="./img/${img}.webp" alt="" loading="lazy">
   </div>
   <div class="container-description">
   <div class="container-description-inner">
@@ -91,7 +91,7 @@ const eachSlide = img =>
 
 const eachSlideAlt = img =>  /*html*/`<div class="general-container split" id="${img}">
 <div class="general-container-inner">
-  <div class="bg" style="background-image: url(./img/${img}.jpg);">
+  <div class="bg" style="background-image: url(./img/${img}.webp);">
   </div>
   <div class="container-text">
   <div class="container-text-inner">
@@ -100,7 +100,7 @@ const eachSlideAlt = img =>  /*html*/`<div class="general-container split" id="$
   </div>
   </div>
   <div class="container-img">
-    <img class="to-the-side" src="./img/${img}.jpg" alt="" loading="lazy">
+    <img class="to-the-side" src="./img/${img}.webp" alt="" loading="lazy">
   </div>
 </div>
 </div>`
