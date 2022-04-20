@@ -16,6 +16,7 @@ i {
 
 p {
   margin-bottom: 1ch;
+  text-align: justify;
 }
 cite {
   font-style: italic;
@@ -30,6 +31,11 @@ cite {
   justify-content: center;
   align-items: center;
   z-index: 10;
+}
+@media (max-width: 768px) {
+  #progressbar {
+    display: none;
+  }
 }
 #progressbar .bar {
   height: 90%;
@@ -89,17 +95,25 @@ a.go-back {
   display: block;
   color: white;
 }
-@media (max-width: 768px) {
-  a.go-back {
-    top: 2%;
-  }
-}
 
 .cover {
   height: 100vh;
   color: white;
   padding: 5%;
   position: relative;
+}
+@media (max-width: 768px) {
+  a.go-back {
+    top: 2%;
+  }
+  #down-arrow {
+    display: none;
+  }
+  .cover {
+    height: auto;
+    padding-top: 20%;
+    border-bottom: solid 30px black;
+  }
 }
 .cover-inner {
   height: 100%;
@@ -162,19 +176,23 @@ h1 {
 .social-links figure svg path {
   fill: white;
 }
-#outer-container {
-  display: grid;
-  grid-template-rows: auto;
-  row-gap: var(--deadzone);
-}
 #outer-container::after {
   content: "";
 }
 .general-container {
-  position: sticky;
-  top: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.938);
+}
+@media (min-width: 768px) {
+  #outer-container {
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: var(--deadzone);
+  }
+  .general-container {
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.938);
+  }
 }
 @media (max-width: 768px) {
   h1 {
@@ -217,8 +235,15 @@ h1 {
   justify-content: center;
 }
 @media (max-width: 768px) {
+  .general-container {
+    border-bottom: solid 30px black;
+  }
+  .container-text {
+    height: auto;
+  }
   .container-text-inner {
     height: auto;
+    padding: 15px;
   }
 }
 .container-text p {
@@ -245,8 +270,14 @@ h1 {
   padding: 15px;
 }
 @media (max-width: 768px) {
+  .container-description {
+    position: relative;
+    transform: translateY(0);
+    padding-bottom: 0;
+    padding-top: 0;
+  }
   .container-description-inner {
-    width: 98%;
+    width: 100%;
   }
 }
 .container-description.active {
@@ -335,6 +366,20 @@ h1 {
     justify-content: center;
     align-items: center;
   }
+  .final {
+    border-bottom: none;
+    height: auto;
+    overflow: visible;
+  }
+  .final .general-container-inner {
+    overflow: visible;
+  }
+  #final .general-container-inner {
+    overflow: visible;
+  }
+  #final .bg {
+    height: auto;
+  }
 }
 .area1 {
   grid-area: area1;
@@ -376,7 +421,7 @@ h1 {
   }
   .container-img {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -399,14 +444,11 @@ h1 {
   }
   .split .container-img {
     width: 100%;
-    height: 50vh;
   }
   .container-text {
     position: static;
     width: 100%;
     color: black;
-    height: 50vh;
-    overflow-y: auto;
   }
   .container-text-inner {
     padding-bottom: 50px;

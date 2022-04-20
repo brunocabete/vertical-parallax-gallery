@@ -19,7 +19,6 @@ document.addEventListener('scroll', () => {
 
     if (offset > base[id] + descriptionDeadzone) {
       try {
-
         v.querySelector('.container-description').classList.add('active')
       } catch {
 
