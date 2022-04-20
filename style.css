@@ -104,7 +104,9 @@ a.go-back {
 }
 @media (max-width: 768px) {
   a.go-back {
-    top: 2%;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
   }
   #down-arrow {
     display: none;
@@ -243,7 +245,7 @@ h1 {
   }
   .container-text-inner {
     height: auto;
-    padding: 15px;
+    padding: 7%;
   }
 }
 .container-text p {
@@ -278,6 +280,7 @@ h1 {
   }
   .container-description-inner {
     width: 100%;
+    padding: 7%;
   }
 }
 .container-description.active {
@@ -380,6 +383,9 @@ h1 {
   #final .bg {
     height: auto;
   }
+  #final .go-back {
+    display: none;
+  }
 }
 .area1 {
   grid-area: area1;
@@ -416,6 +422,9 @@ h1 {
   }
 }
 @media (max-width: 768px) {
+  .footer p {
+    text-align: center;
+  }
   .general-container {
     width: 100vw;
   }
